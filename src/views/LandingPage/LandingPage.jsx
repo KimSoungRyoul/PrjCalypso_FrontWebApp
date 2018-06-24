@@ -32,25 +32,22 @@ class LandingPage extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Material Kit React"
+          brand="Givenness"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
-            height: 400,
+            height: 450,
             color: "white"
           }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+        <Parallax filter image={require("assets/img/giveness.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Your Story Starts With Us.</h1>
+                <h1 className={classes.title}>Givenness</h1>
                 <h4>
-                  Every landing page needs a small description after the big
-                  bold title, that's why we added this text here. Add here all
-                  the information that can make you or your product create the
-                  first impression.
+                  Givenness is Give Nice
                 </h4>
                 <br />
                 <Button
@@ -60,7 +57,7 @@ class LandingPage extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fas fa-play" />Watch video
+                  <i className="fas fa-play" />후원
                 </Button>
               </GridItem>
             </GridContainer>

@@ -20,22 +20,20 @@ class ProductSection extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Let's talk product</h2>
-            <h5 className={classes.description}>
-              This is the paragraph where you can write more details about your
-              product. Keep you user engaged by providing meaningful
-              information. Remember that by this time, the user is curious,
-              otherwise he wouldn't scroll to get here. Add a button if you want
-              the user to see more.
-            </h5>
+            <h2 className={classes.title}>Givenness Project</h2>
+            <h3 className={classes.description}>
+              Give Nice 기브 나이스 => givenice => 기브니스
+              내기부니가.. 좋아
+              Givenness = 내어주다
+            </h3>
           </GridItem>
         </GridContainer>
         <div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Free Chat"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                title="봉사자"
+                description="일반 봉사자"
                 icon={Chat}
                 iconColor="info"
                 vertical
@@ -43,8 +41,8 @@ class ProductSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Verified Users"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                title="기업 봉사"
+                description="기업 봉사자"
                 icon={VerifiedUser}
                 iconColor="success"
                 vertical
@@ -52,8 +50,8 @@ class ProductSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Fingerprint"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                title="소외층 관리"
+                description="소외계층 관리기관"
                 icon={Fingerprint}
                 iconColor="danger"
                 vertical

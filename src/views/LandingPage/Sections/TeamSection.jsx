@@ -11,8 +11,6 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
-import IconButton from "components/CustomButtons/IconButton.jsx";
 
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
 
@@ -30,97 +28,95 @@ class TeamSection extends React.Component {
     );
     return (
       <div className={classes.section}>
+        <h2 className={classes.title}>Here is our teamLeader</h2>
+        <GridContainer>
+          <GridItem xs={12} sm={12} md={12}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={2} className={classes.itemGrid}>
+                <img src={team2} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                나준규
+                  <br />
+                <small className={classes.smallTitle}>Mento</small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                  스마트동 CEO
+                  </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+        </GridContainer>
         <h2 className={classes.title}>Here is our team</h2>
         <div>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={4}>
-              <Card plain>
-                <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img src={team1} alt="..." className={imageClasses} />
-                </GridItem>
-                <h4 className={classes.cardTitle}>
-                  Gigi Hadid
-                  <br />
-                  <small className={classes.smallTitle}>Model</small>
-                </h4>
-                <CardBody>
-                  <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
-                  </p>
-                </CardBody>
-                <CardFooter className={classes.justifyCenter}>
-                  <IconButton color="transparent" className={classes.margin5}>
-                    <i className={classes.socials + " fab fa-twitter"} />
-                  </IconButton>
-                  <IconButton color="transparent" className={classes.margin5}>
-                    <i className={classes.socials + " fab fa-instagram"} />
-                  </IconButton>
-                  <IconButton color="transparent" className={classes.margin5}>
-                    <i className={classes.socials + " fab fa-facebook"} />
-                  </IconButton>
-                </CardFooter>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={12} sm={12} md={3}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <img src={team2} alt="..." className={imageClasses} />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Christian Louboutin
+                  김성렬
                   <br />
-                  <small className={classes.smallTitle}>Designer</small>
+                  <small className={classes.smallTitle}>PL</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                    나는야 김성렬
                   </p>
                 </CardBody>
-                <CardFooter className={classes.justifyCenter}>
-                  <IconButton color="transparent" className={classes.margin5}>
-                    <i className={classes.socials + " fab fa-twitter"} />
-                  </IconButton>
-                  <IconButton color="transparent" className={classes.margin5}>
-                    <i className={classes.socials + " fab fa-linkedin"} />
-                  </IconButton>
-                </CardFooter>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={12} sm={12} md={3}>
+              <Card plain>
+                <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                  <img src={team1} alt="..." className={imageClasses} />
+                </GridItem>
+                <h4 className={classes.cardTitle}>
+                  홍종화
+                  <br />
+                  <small className={classes.smallTitle}>FE</small>
+                </h4>
+                <CardBody>
+                  <p className={classes.description}>
+                    나는야 홍종화
+                  </p>
+                </CardBody>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={3}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <img src={team3} alt="..." className={imageClasses} />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Kendall Jenner
+                  손익현
                   <br />
-                  <small className={classes.smallTitle}>Model</small>
+                  <small className={classes.smallTitle}>BE</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                    나는야 홍종화
                   </p>
                 </CardBody>
-                <CardFooter className={classes.justifyCenter}>
-                  <IconButton color="transparent" className={classes.margin5}>
-                    <i className={classes.socials + " fab fa-twitter"} />
-                  </IconButton>
-                  <IconButton color="transparent" className={classes.margin5}>
-                    <i className={classes.socials + " fab fa-instagram"} />
-                  </IconButton>
-                  <IconButton color="transparent" className={classes.margin5}>
-                    <i className={classes.socials + " fab fa-facebook"} />
-                  </IconButton>
-                </CardFooter>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={3}>
+              <Card plain>
+                <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                  <img src={team3} alt="..." className={imageClasses} />
+                </GridItem>
+                <h4 className={classes.cardTitle}>
+                  안현지
+                  <br />
+                  <small className={classes.smallTitle}>DBA</small>
+                </h4>
+                <CardBody>
+                  <p className={classes.description}>
+                    나는야 안현지
+                  </p>
+                </CardBody>
               </Card>
             </GridItem>
           </GridContainer>

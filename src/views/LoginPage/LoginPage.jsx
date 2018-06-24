@@ -32,6 +32,7 @@ class LoginPage extends React.Component {
       cardAnimaton: "cardHidden"
     };
   }
+  
   componentDidMount() {
     // we add a hidden class to the card and after 700 ms we delete it and the transition appears
     setTimeout(
@@ -48,7 +49,7 @@ class LoginPage extends React.Component {
         <Header
           absolute
           color="transparent"
-          brand="Material Kit React"
+          brand="GiveNice"
           rightLinks={<HeaderLinks />}
           {...rest}
         />
