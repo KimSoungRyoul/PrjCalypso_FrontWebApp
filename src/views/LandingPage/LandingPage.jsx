@@ -45,10 +45,8 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Givenness</h1>
-                <h4>
+                <h3 className={classes.title}>Givenness</h3>
                   Givenness is Give Nice
-                </h4>
                 <br />
                 <Button
                   color="danger"
