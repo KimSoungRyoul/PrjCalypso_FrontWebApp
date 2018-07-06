@@ -1,16 +1,32 @@
-import React, { Component } from 'react';
-import Button from "@material-ui/core/Button";
-import AppBar from "@material-ui/core/AppBar"
-import ToolBar from "@material-ui/core/Toolbar"
+import React, {Component} from 'react';
 import './App.css';
+import Main from './component/Main';
+import BannerBottom from './component/BannerBottom';
+import Welcome from './component/Welcome';
+import BlogBottem from './component/BlogBottom';
+import NewsLetter from './component/NewsLetter';
+import Footer from './component/Footer';
+import DialogModal from './component/DialogModal';
+import SignIn from './component/SignIn';
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <Button variant="raised" color="primary">
-                    Hello World
-                </Button>
+            <div className="App">
+                <header>
+                    <Main/>
+                </header>
+                <body>
+                <BannerBottom/>
+                <Welcome/>
+                {/* <Service/>*/}
+                <BlogBottem/>
+                <NewsLetter/>
+                <Footer/>
+                </body>
+
+                <DialogModal/>
+                <SignIn/>
             </div>
         );
     }
