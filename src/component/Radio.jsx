@@ -3,7 +3,7 @@ import React, { Component, Fragment } from "react";
 class Radio extends Component {
   state = {
     items: this.props.items,
-    value: ""
+    value: this.props.value
   };
 
   handleChage = e => {
@@ -17,16 +17,17 @@ class Radio extends Component {
     const handleChage = this.handleChage;
     const list = this.state.items.map(i => {
       return (
-        <div key={i}>
+        <Fragment key={i}>
           <input
             type="radio"
             name="items"
+            id={i}
             value={i}
             checked={this.state.value === i}
             onChange={handleChage}
           />
-          {i}
-        </div>
+          <label htmlFor={i}>{i} </label>
+        </Fragment>
       );
     });
 

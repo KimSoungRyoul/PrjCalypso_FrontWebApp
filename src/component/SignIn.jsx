@@ -84,9 +84,7 @@ class SignIn extends Component {
                       aria-labelledby="tab_item-1"
                     >
                       <div className="login-top sign-top">
-                        <div className="agileits-login">
-                          <Login />
-                        </div>
+                        <Login />
                       </div>
                     </div>
                   </div>

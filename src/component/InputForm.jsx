@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
+import "../asset/css/custom/InputForm.css";
 
 class InputForm extends Component {
   constructor(props) {
@@ -68,22 +69,26 @@ class InputForm extends Component {
     console.log(this.state);
     const msg = this.renderStatusMessage();
     return (
-      <Fragment>
-        <input
-          type="text"
-          name={this.props.name}
-          placeholder={this.props.placeholder}
-          maxlength={this.props.maxLength}
-          value={this.state.value}
-          onChange={this.handleChange}
-        />
-        <div className="msg">{msg}</div>
-      </Fragment>
+      <div className="userInfoForm">
+        <label className="title">{this.props.label} </label>
+        <div className="content">
+          <input
+            type="text"
+            name={this.props.name}
+            placeholder={this.props.placeholder}
+            maxlength={this.props.maxLength}
+            value={this.state.value}
+            onChange={this.handleChange}
+          />
+          <label className="msg">{msg}</label>
+        </div>
+      </div>
     );
   }
 }
 
 InputForm.propTypes = {
+  label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   maxLength: PropTypes.number,
   filter: PropTypes.object,

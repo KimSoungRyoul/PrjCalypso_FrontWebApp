@@ -1992,7 +1992,7 @@ h3.icon-subheading {
     color: #999;
     padding: 10px;
     margin: 0;
-    width: 100%;
+    width: 80%;
     border: none;
     border-bottom: 1px dashed #999;
     -webkit-appearance: none;
@@ -2001,7 +2001,7 @@ h3.icon-subheading {
 }
 
 .agileits-login input[type="text"]:focus, .agileits-login input[type="email"]:focus, .agileits-login input[type="password"]:focus {
-    border-bottom-style: solid;
+    border-bottom: 1px solid red;
 }
 
 .agileits-login ::-webkit-input-placeholder {

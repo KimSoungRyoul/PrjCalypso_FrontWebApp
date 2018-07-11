@@ -1,0 +1,37 @@
+.userInfoForm {
+    overflow: hidden;
+    height: 80px;
+    margin-bottom: 0px;
+}
+
+.userInfoForm .title {
+    font-size: 1.3em;
+    margin-top: 5px;
+    float: left;
+    width: 100px;
+}
+
+.userInfoForm .content {
+    float: left;
+    height: 80px;
+    margin-left: 40px;
+}
+
+.userInfoForm .content input {
+    padding: 0 10px;
+    border: none;
+    box-sizing: border-box;
+    width: 300px;
+    font-size: 1.5em;
+    border-bottom: 1px solid #999;
+    outline: none;
+}
+
+.userInfoForm .content input:focus {
+    border-bottom-color: red;
+}
+
+.userInfoForm .content label {
+    display: block;
+    padding-top: 10px;
+}

@@ -10,12 +10,21 @@ class DemandOrganization extends Component {
       allok: false
     };
     this.oks = {};
+    this.label = {
+      id: "ID",
+      password: "Password",
+      email: "Email",
+      address: "Address",
+      name: "Name",
+      phone: "Phone",
+      permitNumber: "PermitNumber"
+    };
     this.placeholder = {
       id: "Id",
       password: "Password",
       name: "Name",
       email: "Email",
-      phone: "Phone  Ex) 000-000-0000 OR 000-0000-0000",
+      phone: "Phone 000-(0)000-0000",
       address: "Address",
       permitNumber: "Permit Number"
     };
@@ -27,6 +36,10 @@ class DemandOrganization extends Component {
       name: 5,
       phone: 13,
       permitNumber: 25
+    };
+    this.regularExpression = {
+      nameRegular: /^[가-힣]{2,5}$/,
+      phoneRegular: /^[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}$/
     };
   }
 
@@ -45,54 +58,59 @@ class DemandOrganization extends Component {
 
   render() {
     const submitState = this.state.allok;
-    const nameRegular = /^[가-힣]{2,5}$/;
-    const phoneRegular = /^[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}$/;
-    const { placeholder, maxLength } = this;
+    const { placeholder, maxLength, regularExpression, label } = this;
 
     return (
       <Fragment>
         <form onSubmit={this.handleSubmit}>
           <FormInput
             name="id"
+            label={label.id}
             placeholder={placeholder.id}
             onChange={this.handleChange}
             maxLength={maxLength.id}
           />
           <FormInput
             name="password"
+            label={label.password}
             placeholder={placeholder.password}
             onChange={this.handleChange}
             maxLength={maxLength.password}
           />
           <FormInput
             name="name"
+            label={label.name}
             placeholder={placeholder.name}
-            pattern={nameRegular}
+            pattern={regularExpression.nameRegular}
             onChange={this.handleChange}
             maxLength={maxLength.name}
           />
           <FormInput
             name="email"
+            label={label.email}
             placeholder={placeholder.email}
-            pattern={phoneRegular}
             onChange={this.handleChange}
             maxLength={maxLength.email}
           />
 
           <FormInput
             name="phone"
+            label={label.phone}
             placeholder={placeholder.phone}
+            pattern={regularExpression.phoneRegular}
             onChange={this.handleChange}
             maxLength={maxLength.phone}
           />
           <FormInput
             name="address"
+            label={label.address}
             placeholder={placeholder.address}
             onChange={this.handleChange}
             maxLength={maxLength.address}
           />
           <FormInput
             name="permitNumber"
+            label={label.permitNumber}
             placeholder={placeholder.permitNumber}
             onChange={this.handleChange}
             maxLength={maxLength.permitNumber}
