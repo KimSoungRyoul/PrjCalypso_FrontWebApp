@@ -1,35 +1,29 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
-import Main from './component/Main';
-import BannerBottom from './component/BannerBottom';
-import Welcome from './component/Welcome';
-import BlogBottem from './component/BlogBottom';
-import NewsLetter from './component/NewsLetter';
-import Footer from './component/Footer';
-import DialogModal from './component/DialogModal';
-import SignIn from './component/SignIn';
+import Main from "./component/Main";
+import Welcome from "./component/Welcome";
+import BlogBottem from "./component/BlogBottom";
+import Footer from "./component/Footer";
+import SignIn from "./component/SignIn";
 
 class App extends Component {
-    render() {
-        return (
-            <div className="App">
-                <header>
-                    <Main/>
-                </header>
-                <body>
-                <BannerBottom/>
-                <Welcome/>
-                {/* <Service/>*/}
-                <BlogBottem/>
-                <NewsLetter/>
-                <Footer/>
-                </body>
+  render() {
+    return (
+      <div className="App">
+        <header>
+          <Main />
+        </header>
+        <body>
+          <Welcome />
+          {/* <Service/>*/}
+          <BlogBottem />
+          <Footer />
+        </body>
 
-                <DialogModal/>
-                <SignIn/>
-            </div>
-        );
-    }
+        <SignIn />
+      </div>
+    );
+  }
 }
 
 export default App;
