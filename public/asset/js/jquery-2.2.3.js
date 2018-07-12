@@ -1584,11 +1584,11 @@
 				1 type (only|nth|...)
 				2 what (child|of-type)
 				3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
-				4 xn-component of xn+y argument ([+-]?\d*n|)
-				5 sign of xn-component
-				6 x of xn-component
-				7 sign of y-component
-				8 y of y-component
+				4 xn-components of xn+y argument ([+-]?\d*n|)
+				5 sign of xn-components
+				6 x of xn-components
+				7 sign of y-components
+				8 y of y-components
 			*/
                         match[1] = match[1].toLowerCase();
 
@@ -8379,7 +8379,7 @@
         ajaxPrefilter: addToPrefiltersOrTransports(prefilters),
         ajaxTransport: addToPrefiltersOrTransports(transports),
 
-        // Main method
+        // Header method
         ajax: function (url, options) {
 
             // If url is an object, simulate pre-1.5 signature

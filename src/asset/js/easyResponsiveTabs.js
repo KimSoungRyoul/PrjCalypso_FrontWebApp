@@ -14,7 +14,7 @@
             var opt = options, jtype = opt.type, jfit = opt.fit, jwidth = opt.width, vtabs = 'vertical',
                 accord = 'accordion';
 
-            //Main function
+            //Header function
             this.each(function () {
                 var $respTabs = $(this);
                 $respTabs.find('ul.resp-tabs-list li').addClass('resp-tab-item');

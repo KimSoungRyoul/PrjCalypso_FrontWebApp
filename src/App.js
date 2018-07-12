@@ -1,35 +1,26 @@
-import React, {Component} from 'react';
+import React from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-import Main from './component/Main';
-import BannerBottom from './component/BannerBottom';
-import Welcome from './component/Welcome';
-import BlogBottem from './component/BlogBottom';
-import NewsLetter from './component/NewsLetter';
-import Footer from './component/Footer';
-import DialogModal from './component/DialogModal';
-import SignIn from './component/SignIn';
 
-class App extends Component {
-    render() {
-        return (
-            <div className="App">
-                <header>
-                    <Main/>
-                </header>
-                <body>
-                <BannerBottom/>
-                <Welcome/>
-                {/* <Service/>*/}
-                <BlogBottem/>
-                <NewsLetter/>
-                <Footer/>
-                </body>
+import Home from './views/Home';
+import Posts from "./views/Posts";
+import MyPage from './views/MyPage'
 
-                <DialogModal/>
-                <SignIn/>
+const App = () => {
+    return (
+        <Router>
+            <div>
+
+                <div>
+                    <Switch>
+                        <Route exact path="/" component={Home}/>
+                        <Route path="/posts" component={Posts}/>
+                        <Route path="/mypage" component={MyPage}/>
+                    </Switch>
+                </div>
             </div>
-        );
-    }
-}
+        </Router>
+    );
+};
 
 export default App;
