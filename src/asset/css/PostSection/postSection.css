@@ -1,0 +1,33 @@
+.wrap {
+    width: 100%;
+    margin-bottom: 100px;
+    border-top: 1px solid grey;
+    overflow: hidden;
+}
+
+.PostArea {
+    width: 100%;
+    max-width: 1500px;
+    margin: 50px auto;
+    text-align: center
+}
+
+.PostHeader {
+    margin-bottom: 50px;
+}
+
+.PostHeader>h1 {
+    font-size: 7rem;
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.PostHeader>a {
+    color: grey;
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+.PostContent {
+    height: 100%;
+}

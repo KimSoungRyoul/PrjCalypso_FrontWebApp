@@ -8,9 +8,12 @@ import Footer from "../components/basic/Footer";
 import DialogModal from "../components/basic/DialogModal";
 import SignIn from "../components/basic/SignIn";
 import Header from "../components/basic/Header";
-import NewPost from "../components/index/NewPost";
+import PostSection from "../components/index/PostSection";
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div className="App">
@@ -19,7 +22,8 @@ class Home extends Component {
         </header>
         <body>
           {/* <Service/>*/}
-          <NewPost className="newPoster" />
+          <PostSection title="New Post" />
+          <PostSection title="Popular Post" />
           <Footer />
         </body>
         <SignIn />
