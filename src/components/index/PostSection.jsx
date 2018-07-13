@@ -3,27 +3,32 @@ import CardView from "../basic/CardView";
 import "./../../asset/css/PostSection/postSection.css";
 
 class PostSection extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const posts = this.props.posts;
+    const items = posts.map(item => (
+      <CardView
+        key={item.id}
+        organizationName={item.organizationName}
+        explain={item.explain}
+        money={item.money}
+        img={item.img}
+        percent={item.percent}
+      />
+    ));
+
     return (
       <div className="wrap">
         <div className="PostArea">
           <div className="PostHeader">
             <h1>{this.props.title}</h1>
-            <a href="#">더보기 ></a>
+            <a href="">더보기 ></a>
           </div>
           <div className="PostContent">
-            <div className="Post">
-              <CardView
-                organizationName="ㅇㅁㄴㅇ"
-                explain="익스플레인"
-                money="999,999,000"
-                percent="99"
-                etc="설명"
-              />
-              <CardView />
-              <CardView />
-              <CardView />
-            </div>
+            <div className="Post">{items}</div>
           </div>
         </div>
       </div>

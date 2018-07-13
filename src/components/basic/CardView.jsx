@@ -3,11 +3,11 @@ import "./../../asset/css/CardView/CardView.css";
 
 class CardView extends Component {
   render() {
-    const { organizationName, explain, money, percent, etc } = this.props;
+    const { img, organizationName, explain, money, percent, etc } = this.props;
     return (
       <div class="CardView">
         <div class="CardViewImage">
-          <img src="./images/바지.jpg" alt="이미지" />
+          <img src={img} alt="이미지" />
         </div>
 
         <div class="content">

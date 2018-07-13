@@ -1,31 +1,35 @@
 .wrap {
     width: 100%;
     margin-bottom: 100px;
-    border-top: 1px solid grey;
     overflow: hidden;
 }
 
 .PostArea {
-    width: 100%;
+    width: 80%;
     max-width: 1500px;
-    margin: 50px auto;
-    text-align: center
+    margin: 70px auto;
 }
 
 .PostHeader {
     margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.PostHeader::after {
+    clear: both
 }
 
 .PostHeader>h1 {
     font-size: 7rem;
     font-weight: bold;
-    font-family: 'Nanum Gothic', sans-serif;
+    float: left;
 }
 
 .PostHeader>a {
     color: grey;
     font-size: 3rem;
     margin-top: 10px;
+    float: right;
 }
 
 .PostContent {
