@@ -10,10 +10,9 @@
   @include opacity(0);
   @include box-shadow($dropdown-shadow);
 
-  .show & {
+  .open & {
     @include opacity(1);
     visibility: visible;
-    transform: translate3d(0px, 0px, 0px) !important;
   }
   .select & {
     border-radius: $border-radius-bottom;
@@ -23,11 +22,11 @@
     @include transition($fast-transition-time, $transition-linear);
     margin-top: -20px;
   }
-  .select.show & {
+  .select.open & {
     margin-top: -1px;
   }
 
-  .dropdown-item {
+  > li > a {
     padding: $padding-base-vertical $padding-base-horizontal;
     color: #333333;
 
@@ -35,7 +34,7 @@
       margin-top: -3px;
     }
   }
-  .dropdown-item:focus {
+  > li > a:focus {
     outline: 0 !important;
   }
 
@@ -58,8 +57,8 @@
     border-bottom: 0 none;
   }
 
-  .dropdown-item:hover,
-  .dropdown-item:focus {
+  > li > a:hover,
+  > li > a:focus {
     background-color: $smoke-bg;
     color: #333333;
     opacity: 1;
@@ -87,24 +86,6 @@
     background-color: $light-red;
   }
 
-  .dropdown-item {
-    i[class*="nc-icon"] {
-      font-size: 18px;
-      text-align: center;
-      line-height: 25px;
-      float: left;
-      padding-right: 10px;
-    }
-  }
-
-  &.dropdown-menu-right {
-    &:before,
-    &:after {
-      right: 12px !important;
-      left: auto !important;
-    }
-  }
-
 }
 
 .dropdown-with-icons {
@@ -128,11 +109,13 @@
   }
 }
 
-//fix bug for the select items in btn-group
+//fix bug for the select items in btn-group 
 .btn-group.select {
   overflow: hidden;
 }
 
-.btn-group.select.show {
+.btn-group.select.open {
   overflow: visible;
 }
+
+

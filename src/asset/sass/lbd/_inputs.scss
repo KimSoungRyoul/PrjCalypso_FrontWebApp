@@ -84,6 +84,7 @@
   }
 }
 
+
 .input-group-addon {
   background-color: $white-color;
   border: 1px solid $light-gray;
@@ -111,18 +112,17 @@
 
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
-.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:first-child > .dropdown-toggle, 
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
   border-right: 0 none;
 }
 
 .input-group .form-control:last-child,
 .input-group-addon:last-child,
-.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:last-child > .dropdown-toggle, 
 .input-group-btn:first-child > .btn:not(:first-child) {
   border-left: 0 none;
 }
-
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
   background-color: $smoke-bg;
   color: $default-color;

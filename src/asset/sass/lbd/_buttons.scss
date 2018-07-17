@@ -12,7 +12,6 @@
   &:focus {
     @include opacity(1);
     outline: 0 !important;
-    box-shadow: none;
   }
   &:active,
   &.active,
@@ -24,7 +23,7 @@
   &.btn-icon {
     padding: $padding-base-vertical;
   }
-
+    
 }
 
 // Apply the mixin to the buttons
@@ -107,11 +106,9 @@
 .btn-sm {
   @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $border-radius-small);
 }
-
 .btn-xs {
   @include btn-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $border-radius-small);
 }
-
 .btn-wd {
   min-width: 140px;
 }
@@ -129,29 +126,4 @@
   top: 50%;
   margin-top: -1px;
   right: 8px;
-}
-
-.btn-social {
-  opacity: 0.85;
-}
-
-.btn-twitter {
-  border-color: $social-twitter;
-  color: $social-twitter;
-  &:hover {
-    opacity: 1 !important;
-    border-color: $social-twitter;
-    color: $social-twitter;
-  }
-}
-
-.btn-facebook {
-  border-color: $social-facebook;
-  color: $social-facebook;
-
-  &:hover {
-    opacity: 1 !important;
-    border-color: $social-facebook;
-    color: $social-facebook;
-  }
 }

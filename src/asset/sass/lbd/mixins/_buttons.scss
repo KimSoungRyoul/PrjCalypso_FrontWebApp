@@ -31,7 +31,7 @@
   &.btn-fill {
     color: $white-color;
     background-color: $btn-color;
-    @include opacity(1);
+    @include opacity(1);  
 
     &:hover,
     &:focus,
@@ -64,5 +64,5 @@
   &.btn-simple {
     padding: $padding-vertical + 2 $padding-horizontal;
   }
-
+    
 }
