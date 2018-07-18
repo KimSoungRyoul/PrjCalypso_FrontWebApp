@@ -9,7 +9,7 @@ class BannerHeader extends Component {
                 <div className="container">
                     <div className="agile_banner_info">
                         <div className="agile_banner_info1">
-                            <h6>소외계층을 위한 당신의 Givenness </h6>
+                            <h6>소외계층을 위한 당신의 헌신(Givenness) </h6>
                             <div id="typed-strings" className="agileits_w3layouts_strings">
                                 <p>자유로운<i> 봉사활동 </i></p>
                                 <p><i>편리한 </i> 기업 봉사이력 관리</p>

@@ -12,18 +12,13 @@ import UserProfile from "./views/UserProfile";
 const App = () => {
     return (
         <Router>
-            <div>
-
-                <div>
-                    <Switch>
-                        <Route exact path="/" component={Home}/>
-                        <Route path="/posts" component={Posts}/>
-                        <Route path="/mypage" component={TableList}/>
-                        <Route path="/dashboard" component={Dashboard}/>
-                        <Route path="/user" component={UserProfile}/>
-                    </Switch>
-                </div>
-            </div>
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route path="/posts" component={Posts}/>
+                <Route path="/mypage" component={TableList}/>
+                <Route path="/dashboard" component={Dashboard}/>
+                <Route path="/user" component={UserProfile}/>
+            </Switch>
         </Router>
     );
 };

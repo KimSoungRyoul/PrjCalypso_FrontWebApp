@@ -1,6 +1,7 @@
 import Dashboard from "../views/Dashboard";
 import UserProfile from "../views/UserProfile";
 import TableList from "../views/TableList";
+import Home from "../views/Home";
 /*import Typography from "views/Typography/Typography";
 import Icons from "views/Icons/Icons";
 import Maps from "views/Maps/Maps";
@@ -25,7 +26,15 @@ const dashboardRoutes = [
         name: "Table List",
         icon: "pe-7s-note2",
         component: TableList
-    }/*,
+    },
+    {
+        path: "/",
+        name: "Main",
+        icon: "pe-7s-note2",
+        component: Home
+    }
+
+    /*,
   {
     path: "/typography",
     name: "Typography",

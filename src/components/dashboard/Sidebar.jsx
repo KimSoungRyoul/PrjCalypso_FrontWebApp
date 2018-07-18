@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {NavLink} from "react-router-dom";
 
-import HeaderLinks from "./HeaderLinks.jsx";
+import HeaderLinks from "./HeaderLinks";
 
 import imagine from "../../asset/images/sidebar-3.jpg";
 import logo from "../../asset/images/reactlogo.png";

@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import {Col, Grid, Row} from "react-bootstrap";
 
-import Card from "components/Card/Card";
-import {iconsArray} from "variables/Variables.jsx";
+import Card from "../../components/dashboard/Card";
+import {iconsArray} from "../../variables/Variables";
 
 class Icons extends Component {
     render() {
