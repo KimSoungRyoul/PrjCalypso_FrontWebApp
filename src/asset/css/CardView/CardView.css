@@ -1,0 +1,83 @@
+.CardView {
+    width: 270px;
+    height: 400px;
+    box-shadow: 0px 0px 5px 1px #9f9f9f;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+    margin: 10px 15px 20px 15px;
+    box-sizing: border-box;
+    float: left
+}
+
+.CardView:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 1px pink;
+}
+
+.CardViewImage {
+    width: 270px;
+    height: 200px;
+}
+
+.CardViewImage img {
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.CardView .content {
+    position: relative;
+    width: 270px;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.CardView .content .organizationName {
+    font-size: 1.2rem;
+    text-align: left;
+    color: #ff8787;
+    margin-left: 10px;
+}
+
+.CardView .content .explain {
+    margin-top: 5px;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.CardView .content .donation {
+    margin: 20px 0 10px 10px;
+    width: 100%;
+    color: grey;
+}
+
+.CardView .content .donation span:nth-child(1) {
+    font-size: 1.5em;
+}
+
+.CardView .content .donation span:nth-child(2) {
+    font-size: 1em;
+    margin-left: 30px;
+}
+
+#ProgressBackground {
+    width: 90%;
+    height: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+#progress {
+    width: 100%;
+    height: 10px;
+    background-color: #748ffc;
+    border-radius: 8px;
+}
