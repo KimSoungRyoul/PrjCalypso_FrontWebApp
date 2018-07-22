@@ -3,7 +3,7 @@ import "./../../asset/css/CardView/CardView.css";
 
 class CardView extends Component {
   render() {
-    const { img, organizationName, explain, money, percent, etc } = this.props;
+    const { img, organizationName, explain, money, percent } = this.props;
     return (
       <div class="CardView">
         <div class="CardViewImage">
@@ -17,10 +17,12 @@ class CardView extends Component {
             <span>₩ {money}</span>
             <span>{percent}%</span>
             <div id="ProgressBackground">
-              <div id="progress" />
+              <div
+                id="progress"
+                style={{ width: `${percent >= 100 ? 100 : percent}%` }}
+              />
             </div>
           </div>
-          <div class="etc">{etc}</div>
         </div>
       </div>
     );
