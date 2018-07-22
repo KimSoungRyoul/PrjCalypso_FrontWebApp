@@ -2,6 +2,7 @@
     width: 100%;
     margin-bottom: 100px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .PostArea {
@@ -33,5 +34,7 @@
 }
 
 .PostContent {
-    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
 }

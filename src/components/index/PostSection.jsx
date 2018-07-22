@@ -17,6 +17,7 @@ class PostSection extends Component {
         money={item.money}
         img={item.img}
         percent={item.percent}
+        count={item.count}
       />
     ));
 
@@ -27,9 +28,7 @@ class PostSection extends Component {
             <h1>{this.props.title}</h1>
             <a href="">더보기 ></a>
           </div>
-          <div className="PostContent">
-            <div className="Post">{items}</div>
-          </div>
+          <div className="PostContent">{items}</div>
         </div>
       </div>
     );

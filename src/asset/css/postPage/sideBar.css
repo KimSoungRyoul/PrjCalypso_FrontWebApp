@@ -1,0 +1,23 @@
+.post-sideBar {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.post-sideBar ul {
+  overflow: hidden;
+}
+
+.post-sideBar ul li {
+  list-style: none;
+  float: left;
+}
+
+.post-sideBar ul li a {
+  font-size: 2em;
+  padding: 2em;
+}
+
+.post-sideBar ul::after {
+  content: '';
+  border-bottom: 5px solid black;
+}
