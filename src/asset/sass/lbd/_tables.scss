@@ -23,7 +23,10 @@
     padding: 12px 8px;
     vertical-align: middle;
   }
-
+  // MANU : aici este ceva schimbat!!!
+  > tbody > tr > td {
+    font-size: 14px;
+  }
   > thead > tr > th {
     border-bottom-width: 1px;
     font-size: $font-size-small;
@@ -31,9 +34,6 @@
     color: $dark-gray;
     font-weight: $font-weight-normal;
     padding-bottom: 5px;
-    border-top: none !important;
-    border-bottom: none;
-    text-align: left !important;
   }
 
   .td-actions .btn {
@@ -54,20 +54,6 @@
     &:hover {
       .td-actions .btn {
         @include opacity(1);
-      }
-    }
-  }
-
-  .btn:focus {
-    box-shadow: none !important;
-  }
-}
-
-.table-upgrade {
-  .table {
-    tr {
-      td {
-        width: 100%
       }
     }
   }

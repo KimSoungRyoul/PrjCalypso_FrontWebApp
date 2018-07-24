@@ -15,7 +15,6 @@
 .flexslider a:focus {
     outline: none;
 }
-
 .slides,
 .flex-control-nav,
 .flex-direction-nav {
@@ -108,7 +107,6 @@ html[xmlns] .slides {
     color: #fff;
     font-size: 0;
 }
-
 .flex-direction-nav a:before {
     font-size: 25px;
     display: block;
@@ -120,7 +118,6 @@ html[xmlns] .slides {
 .flex-direction-nav .flex-next {
     right: 6%;
 }
-
 .flex-direction-nav a.flex-next:before {
     display: block;
     content: "\f178";
@@ -148,7 +145,6 @@ html[xmlns] .slides {
     filter: alpha(opacity=30);
     cursor: default;
 }
-
 /* Control Nav */
 .flex-control-nav {
     display: block;
@@ -157,14 +153,12 @@ html[xmlns] .slides {
     margin-left: 0;
     bottom: 4%;
 }
-
 .flex-control-nav li {
     margin: 0 .5em;
     display: inline-block;
     zoom: 1;
     position: relative;
 }
-
 .flex-control-paging li a {
     width: 10px;
     height: 10px;
@@ -179,7 +173,6 @@ html[xmlns] .slides {
     border-radius: 15px;
     font-weight: 600;
 }
-
 .flex-control-nav li:first-child:before {
     content: '';
     background: rgba(255, 255, 255, 0.59);

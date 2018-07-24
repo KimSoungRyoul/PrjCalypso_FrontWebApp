@@ -1,9 +1,6 @@
 .footer {
   background-color: $white-color;
-
-  .footer-menu {
-    height: 41px;
-  }
+  line-height: $line-height;
 
   nav > ul {
     list-style: none;
@@ -73,3 +70,8 @@
     }
   }
 }
+
+
+
+
+
