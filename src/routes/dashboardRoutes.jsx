@@ -5,19 +5,19 @@ import TableList from "../views/TableList";
 const dashboardRoutes = [
     {
         path: "/dashboard",
-        name: "Dashboard",
+        name: "자원봉사 통계",
         icon: "pe-7s-graph",
         component: Dashboard
     },
     {
         path: "/mypage",
-        name: "User Profile",
+        name: "회원 프로필",
         icon: "pe-7s-user",
         component: UserProfile
     },
     {
         path: "/table",
-        name: "Table List",
+        name: "직원별 봉사기록 ",
         icon: "pe-7s-note2",
         component: TableList
     }

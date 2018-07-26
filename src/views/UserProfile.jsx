@@ -50,14 +50,14 @@ class UserProfile extends Component {
                                             ncols={["col-md-6", "col-md-6"]}
                                             proprieties={[
                                                 {
-                                                    label: "First name",
+                                                    label: "이름(First Name)",
                                                     type: "text",
                                                     bsClass: "form-control",
                                                     placeholder: "First name",
                                                     defaultValue: "Mike"
                                                 },
                                                 {
-                                                    label: "Last name",
+                                                    label: "성(Last Name)",
                                                     type: "text",
                                                     bsClass: "form-control",
                                                     placeholder: "Last name",
@@ -69,10 +69,10 @@ class UserProfile extends Component {
                                             ncols={["col-md-12"]}
                                             proprieties={[
                                                 {
-                                                    label: "Adress",
+                                                    label: "주소 ",
                                                     type: "text",
                                                     bsClass: "form-control",
-                                                    placeholder: "Home Adress",
+                                                    placeholder: "Home Or Company Adress",
                                                     defaultValue:
                                                         "Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
                                                 }
@@ -113,7 +113,9 @@ class UserProfile extends Component {
                                                         componentClass="textarea"
                                                         bsClass="form-control"
                                                         placeholder="Here can be your description"
-                                                        defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
+                                                        defaultValue="돈을 기부하는것에 만족해서는 안됩니다
+사람들이 진정으로 필요로 하는것은
+사랑의 마음이기 때문입니다"
                                                     />
                                                 </FormGroup>
                                             </Col>
@@ -134,11 +136,11 @@ class UserProfile extends Component {
                                 userName="michael24"
                                 description={
                                     <span>
-                    "Lamborghini Mercy
+                   돈을 기부하는것에 만족해서는 안됩니다
                     <br/>
-                    Your chick she so thirsty
+                    사람들이 진정으로 필요로 하는것은 
                     <br/>
-                    I'm in that two seat Lambo"
+                    사랑의 마음이기 때문입니다
                   </span>
                                 }
                                 socials={
@@ -150,7 +152,7 @@ class UserProfile extends Component {
                                             <i className="fa fa-twitter"/>
                                         </Button>
                                         <Button simple>
-                                            <i className="fa fa-google-plus-square"/>
+                                            <i className="fa fa-instagram"/>
                                         </Button>
                                     </div>
                                 }

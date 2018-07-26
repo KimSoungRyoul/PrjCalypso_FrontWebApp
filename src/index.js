@@ -7,11 +7,12 @@ import './asset/sass/light-bootstrap-dashboard.css?v=1.2.0';
 
 import "./asset/css/dashboard/demo.css";
 import "./asset/css/dashboard/pe-icon-7-stroke.css";
+
+
 import Dashboard from "./layouts/Dashboard";
 import Home from "./views/Home";
-
-
 import UserProfile from "./views/UserProfile";
+import TableList from "./views/TableList";
 
 ReactDOM.render(
     <Router>
@@ -21,6 +22,7 @@ ReactDOM.render(
             <Route path="/mypage" component={Dashboard}/>
 
             <Route path="/user" component={UserProfile}/>
+            <Route path="/table" component={TableList}/>
         </Switch>
     </Router>
     , document.getElementById('root'));

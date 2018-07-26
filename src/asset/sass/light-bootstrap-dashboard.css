@@ -3413,7 +3413,6 @@ fieldset[disabled] .btn-neutral.active {
         -ms-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
         transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
     }
-
     .sidebar > ul {
         position: relative;
         z-index: 4;
@@ -3421,7 +3420,6 @@ fieldset[disabled] .btn-neutral.active {
         height: calc(100vh - 61px);
         width: 100%;
     }
-
     .sidebar::before {
         top: 0;
         left: 0;
@@ -3433,17 +3431,14 @@ fieldset[disabled] .btn-neutral.active {
         content: "";
         z-index: 1;
     }
-
     .sidebar .sidebar-wrapper .dropdown-menu > li:first-child > a,
     .sidebar .sidebar-wrapper .dropdown-menu > li:last-child > a {
         border-radius: 4px;
     }
-
     .sidebar .sidebar-wrapper .dropdown-menu > li > a:hover,
     .sidebar .sidebar-wrapper .dropdown-menu > li > a:focus {
         color: white;
     }
-
     .sidebar .sidebar-wrapper > .nav > div .nav {
         margin-top: 10px;
         float: none !important;
@@ -3457,14 +3452,12 @@ fieldset[disabled] .btn-neutral.active {
         text-transform: uppercase;
         margin: 5px 15px;
     }
-
     .sidebar .sidebar-wrapper > .nav > div .notification {
         float: left;
         line-height: 30px;
         margin-right: 8px;
         font-weight: 600;
     }
-
     .sidebar .open .dropdown-menu {
         position: static;
         float: none;
@@ -3790,15 +3783,12 @@ fieldset[disabled] .btn-neutral.active {
     .navbar-nav {
         margin: 1px 0;
     }
-
     .navbar-nav .open .dropdown-menu > li > a {
         padding: 15px 15px 5px 50px;
     }
-
     .navbar-nav .open .dropdown-menu > li:first-child > a {
         padding: 5px 15px 5px 50px;
     }
-
     .navbar-nav .open .dropdown-menu > li:last-child > a {
         padding: 15px 15px 25px 50px;
     }
