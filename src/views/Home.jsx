@@ -1,17 +1,17 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 
-import Footer from "../components/basic/Footer";
-import SignIn from "../components/basic/SignIn";
-import Header from "../components/basic/Header";
-import PostSection from "../components/index/PostSection";
-import test1 from "../asset/images/test1.jpg";
-import test2 from "../asset/images/test2.jpg";
-import test3 from "../asset/images/test3.jpg";
-import test4 from "../asset/images/test4.jpg";
-import test5 from "../asset/images/test5.jpg";
-import test6 from "../asset/images/test6.jpg";
-import test7 from "../asset/images/test7.jpg";
-import test8 from "../asset/images/test8.jpg";
+import Footer from "components/basic/Footer";
+import SignIn from "components/basic/SignIn";
+import Header from "components/basic/Header";
+import PostSection from "components/index/PostSection";
+import test1 from "asset/images/test1.jpg";
+import test2 from "asset/images/test2.jpg";
+import test3 from "asset/images/test3.jpg";
+import test4 from "asset/images/test4.jpg";
+import test5 from "asset/images/test5.jpg";
+import test6 from "asset/images/test6.jpg";
+import test7 from "asset/images/test7.jpg";
+import test8 from "asset/images/test8.jpg";
 
 class Home extends Component {
   constructor(props) {

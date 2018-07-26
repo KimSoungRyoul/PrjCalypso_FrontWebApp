@@ -2,13 +2,14 @@ import React, {Component} from "react";
 import {Redirect, Route, Switch} from "react-router-dom";
 import NotificationSystem from "react-notification-system";
 
-import Header from '../components/dashboard/Header';
-import Footer from '../components/dashboard/Footer';
-import Sidebar from '../components/dashboard/Sidebar';
+import Header from 'components/dashboard/Header';
+import Footer from 'components/dashboard/Footer';
+import Sidebar from 'components/dashboard/Sidebar';
 
-import {style} from '../variables/Variables';
 
-import dashboardRoutes from '../routes/dashboardRoutes';
+import {style} from 'variables/Variables';
+
+import dashboardRoutes from 'routes/dashboardRoutes';
 
 
 class Dashboard extends Component {

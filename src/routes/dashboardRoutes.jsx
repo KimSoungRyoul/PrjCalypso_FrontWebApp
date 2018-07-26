@@ -1,7 +1,6 @@
 import Dashboard from "../views/Dashboard";
 import UserProfile from "../views/UserProfile";
 import TableList from "../views/TableList";
-import Home from "../views/Home";
 
 const dashboardRoutes = [
     {
@@ -11,7 +10,7 @@ const dashboardRoutes = [
         component: Dashboard
     },
     {
-        path: "/user",
+        path: "/mypage",
         name: "User Profile",
         icon: "pe-7s-user",
         component: UserProfile
@@ -21,12 +20,6 @@ const dashboardRoutes = [
         name: "Table List",
         icon: "pe-7s-note2",
         component: TableList
-    },
-    {
-        path: "/",
-        name: "Main",
-        icon: "pe-7s-note2",
-        component: Home
     }
 
     /*,

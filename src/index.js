@@ -10,7 +10,7 @@ import "./asset/css/dashboard/pe-icon-7-stroke.css";
 import Dashboard from "./layouts/Dashboard";
 import Home from "./views/Home";
 
-import TableList from "./views/TableList";
+
 import UserProfile from "./views/UserProfile";
 
 ReactDOM.render(
@@ -18,8 +18,8 @@ ReactDOM.render(
         <Switch>
             <Route exact path="/" component={Home}/>
 
-            <Route path="/mypage" component={TableList}/>
-            <Route path="/dashboard" component={Dashboard}/>
+            <Route path="/mypage" component={Dashboard}/>
+
             <Route path="/user" component={UserProfile}/>
         </Switch>
     </Router>

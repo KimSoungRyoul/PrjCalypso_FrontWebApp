@@ -1,12 +1,13 @@
 import React, {Component} from "react";
 import {Col, ControlLabel, FormControl, FormGroup, Grid, Row} from "react-bootstrap";
 
-import {Card} from "../components/dashboard/Card";
-import {FormInputs} from "../components/dashboard/FormInputs";
-import {UserCard} from "../components/dashboard/UserCard";
-import Button from "../components/dashboard/CustomButton";
+import {Card} from "components/dashboard/Card";
+import {FormInputs} from "components/dashboard/FormInputs";
+import {UserCard} from "components/dashboard/UserCard";
+import Button from "components/dashboard/CustomButton";
 
-import avatar from "../asset/images/faces/face-3.jpg";
+import avatar from "asset/images/faces/face-3.jpg";
+import TableList from "./TableList";
 
 class UserProfile extends Component {
     render() {
@@ -16,14 +17,14 @@ class UserProfile extends Component {
                     <Row>
                         <Col md={8}>
                             <Card
-                                title="Edit Profile"
+                                title="회원 정보"
                                 content={
                                     <form>
                                         <FormInputs
                                             ncols={["col-md-5", "col-md-3", "col-md-4"]}
                                             proprieties={[
                                                 {
-                                                    label: "Company (disabled)",
+                                                    label: "소속",
                                                     type: "text",
                                                     bsClass: "form-control",
                                                     placeholder: "Company",
@@ -31,7 +32,7 @@ class UserProfile extends Component {
                                                     disabled: true
                                                 },
                                                 {
-                                                    label: "Username",
+                                                    label: "회원 이름",
                                                     type: "text",
                                                     bsClass: "form-control",
                                                     placeholder: "Username",
@@ -118,7 +119,7 @@ class UserProfile extends Component {
                                             </Col>
                                         </Row>
                                         <Button bsStyle="info" pullRight fill type="submit">
-                                            Update Profile
+                                            개인정보 수정하기
                                         </Button>
                                         <div className="clearfix"/>
                                     </form>
@@ -156,7 +157,8 @@ class UserProfile extends Component {
                             />
                         </Col>
                     </Row>
-                </Grid>>
+                </Grid>
+                <TableList/>
             </div>
         );
     }

@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import CardView from "../basic/CardView";
-import "./../../asset/css/PostSection/postSection.css";
+import React, {Component} from "react";
+import CardView from 'components/basic/CardView';
+import "asset/css/PostSection/postSection.css";
 
 class PostSection extends Component {
   constructor(props) {
