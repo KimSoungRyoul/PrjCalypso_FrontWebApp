@@ -1,0 +1,62 @@
+.Postwrap {
+  overflow: hidden;
+}
+
+.Postwrap .PostArea {
+  max-width: 1080px;
+  margin: 5rem auto;
+  overflow: hidden;
+}
+
+.Postwrap .PostArea .PostHeader {
+  font-family: "Lovelo Black", sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+.PostHeader .title {
+  flex-grow: 1;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.PostHeader .title h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.PostHeader .moreLink {
+  text-decoration: none;
+  color: gray;
+}
+
+.PostArea .PostContent {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.PostArea .PostContent .item {
+  overflow: hidden;
+  box-sizing: border-box;
+  min-width: 260px;
+  max-width: 350px;
+  width: 25%;
+  flex-grow: 1;
+  flex-wrap: 10px;
+  border-spacing: 10px;
+}
+
+@media (max-width: 920px) {
+  .PostArea .PostContent .item {
+    overflow: hidden;
+    box-sizing: border-box;
+    min-width: 250px;
+    width: 50%;
+    flex-grow: 1;
+    flex-wrap: 10px;
+  }
+}

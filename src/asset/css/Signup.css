@@ -1,0 +1,56 @@
+.Signupwrap {
+  overflow: hidden;
+}
+
+.Signupwrap .signup {
+  max-width: 500px;
+  margin: 10rem auto;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px #9f9f9f;
+}
+
+.Signupwrap .signup .container {
+  text-align: left;
+  padding: 20px;
+}
+
+.Signupwrap .signup .container .title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.Signupwrap .signup .container .radioArea {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.radioArea input[type='radio'] {
+  display: none;
+}
+
+.radioArea input[type='radio']:checked+label {
+  background-color: #1D62AB;
+  color: white;
+  font-size: bold;
+}
+
+.radioArea label {
+  font-size: 1.5rem;
+  font-weight: 400;
+  flex-grow: 1;
+  color: grey;
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.radioArea label:hover {
+  color: black;
+}
+
+.signup .container .InputArea {
+  margin: 3rem 0 0 0.5rem;
+}

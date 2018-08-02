@@ -1,0 +1,108 @@
+.header {
+  position: relative;
+  overflow: hidden;
+}
+
+.header::after {
+  content: "";
+  display: block;
+}
+
+.header .nav {
+  z-index: 999;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.nav .container .left-nav {
+  flex-grow: 1;
+}
+
+.left-nav .container {
+  flex: 1;
+}
+
+.left-nav .container .brand {
+  display: flex;
+  flex-grow: 1;
+  height: inherit;
+}
+
+.left-nav .container .brand .logo {
+  text-align: right;
+}
+
+.left-nav .container .brand .brandName {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 30px;
+}
+
+.left-nav .container .post {
+  height: inherit;
+  flex-grow: 3;
+}
+
+.nav .container .right-nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.right-nav .container {
+  flex-grow: 1;
+}
+
+.right-nav .container .login {
+  flex-grow: 4;
+  height: inherit;
+}
+
+.right-nav .container .signup {
+  flex-grow: 1;
+  height: inherit;
+}
+
+.right-nav .container .logout {
+  flex-grow: 1;
+  flex-wrap: wrap
+}
+
+.logo img {
+  display: block;
+  padding: 0;
+  margin: 10% 20px 0 0;
+  height: 80%;
+}
+
+.navItem {
+  color: white;
+  text-decoration: none;
+  font-family: "Lovelo Black", sans-serif;
+  display: block;
+  height: 80px;
+  line-height: 80px;
+}
+
+NavLink {
+  color: blue;
+}
+
+.banner {
+  height: 70vh;
+  background-image: url("../images/banner2.jpg");
+  background-size: cover;
+  position: static;
+}
