@@ -1,0 +1,31 @@
+.Loginwrap {
+  overflow: hidden;
+  position: relative;
+  top: 5rem;
+  min-height: 100vh;
+}
+
+.LoginArea {
+  max-width: 500px;
+  margin: 10rem auto;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px #9f9f9f;
+}
+
+.LoginArea .container {
+  text-align: left;
+  padding: 20px;
+}
+
+.LoginArea .container .title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.LoginArea .container .InputArea {
+  margin: 2rem auto 0;
+  width: 80%;
+  min-width: 300px;
+}
